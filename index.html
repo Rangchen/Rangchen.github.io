@@ -7,7 +7,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>陈让博客</title>
+<!-- /* 	<style type="text/css">body{zoom: 1.4;}</style> */ -->
+<title>个人网站</title>
+<meta name="description" content="Change OR Die" />
 <!--mobile apps-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,10 +22,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 <link rel="stylesheet" href="css/swipebox.css">
 <!--//Custom Theme files-->
-
+<!--js-->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+<!--web-fonts-->
 <link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
+<!--//web-fonts-->
+<!--start-smooth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
 <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
@@ -34,13 +42,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </script>
 <!--//end-smooth-scrolling-->
 </head>
-<body>
 	<!--banner-->
 	<div id="home" class="banner">
 		<div class="banner-info">
 			<div class="container">
 				<div class="col-md-4 header-left">
-					<img src="images/img1.jpg" alt=""/>
+					<div class="NoData" v-if="NoData">			   
+				<img class="noDataImg" src="images/img2.jpeg"/>
+				 </div>
 				</div>
 				<div class="col-md-8 header-right">
 					<h2>Hello</h2>
@@ -56,13 +65,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li>
 							<ul class="address-text">
 								<li><b>PHONE </b></li>
-								<li>+86 18677601666</li>
+								<li>+86 18677601082</li>
 							</ul>
 						</li>
 						<li>
 							<ul class="address-text">
 								<li><b>ADDRESS </b></li>
-								<li><a href"https://map.baidu.com/search/%E5%8D%97%E5%AE%81%E5%B8%82/@12064209.000000002,2593857.2499999986,12z?querytype=s&da_src=shareurl&wd=%E5%8D%97%E5%AE%81&c=1&src=0&pn=0&sug=0&l=4&b=(-654971.0854282435,-778000.4229674358;21681044.1864542,10332954.81125761)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&seckey=325fe353fb855cec39bf8f3a7017775d0753dbb054da61b60665a936f8b6ba0da31c55dde37c3ce0e7bbb510ab85be38f0618f4eeb341cccc0be94e1742863c8c4a8d65fe85e3ca65ad1431b9c315054254ef55b1954e628be8ec666eff6166dcc6318afd6eda19092a96f5d25a19d4e85ae403a5bd7021f048327f7edc881cfc6271c3962b357c64336ac1b341c5cfcd1293f8a24b4b65e0543f3163fcc83a60a991b0a097efd30f19de255a786c163a31314eeaeabba9524c6c471eb63a242a4fb78b335a0666b529f7620a70c39aa65ab6a47409c677b06839d1500bb3a583bebf30856fd4a6d925c5d0f8ad7d775&device_ratio=2"> Nanning City,Guangxi province , Chinese.</a></li>
+								<li><a href="https://map.baidu.com/search/%E5%8D%97%E5%AE%81%E5%B8%82/@12064209.000000002,2593857.2499999986,12z?querytype=s&da_src=shareurl&wd=%E5%8D%97%E5%AE%81&c=1&src=0&pn=0&sug=0&l=4&b=(-654971.0854282435,-778000.4229674358;21681044.1864542,10332954.81125761)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&seckey=325fe353fb855cec39bf8f3a7017775d0753dbb054da61b60665a936f8b6ba0da31c55dde37c3ce0e7bbb510ab85be38f0618f4eeb341cccc0be94e1742863c8c4a8d65fe85e3ca65ad1431b9c315054254ef55b1954e628be8ec666eff6166dcc6318afd6eda19092a96f5d25a19d4e85ae403a5bd7021f048327f7edc881cfc6271c3962b357c64336ac1b341c5cfcd1293f8a24b4b65e0543f3163fcc83a60a991b0a097efd30f19de255a786c163a31314eeaeabba9524c6c471eb63a242a4fb78b335a0666b529f7620a70c39aa65ab6a47409c677b06839d1500bb3a583bebf30856fd4a6d925c5d0f8ad7d775&device_ratio=2">Nanning City,Guangxi province , Chinese.</a></li>
 							</ul>
 						</li>
 						<li>
@@ -75,6 +84,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<ul class="address-text">
 								<li><b>WEBSITE </b></li>
 								<li><a href="rangchen.github.io">rangchen.github.io</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>HOBBY </b></li>
+								<li><a href="https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/">Truck enthusiast</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -92,8 +107,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					Menu
 				</button>
 			</div>
-			
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<body>
+<!-- 				<audio hidden="true" autoplay="autoplay" loop="true" controls="controls">
+				 
+				    <source src="../media/"  type="audio/mpeg"/>
+				</audio> -->	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">			
 				<div class="menu">
 					<ul class="nav navbar">
 						<li><a href="#about" class="scroll">About</a></li>
@@ -107,13 +127,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
+	<div class="item">
+			<div class="item-wrapper">
+				<div class="item-content">
+					<img class="item-img" src="images/2.jpg"/>
+					<img class="item-img" src="images/4.jpg"/>
+					<img class="item-img" src="images/6.jpg"/>
+					<img class="item-img" src="images/a.jpg"/>
+				</div>
+			</div>
+		</div>	
 	<!--//contact -->
 	<!--footer-->
 	<div class="footer">
 		<div class="container">
-			<p>© 2021 My personal blog | Design by <a href="https://rangchen.github.io/">Chenrang</a></p>
-			<p>special thanks: Mingran7</p>
+			<p>© 2021 My personal blog | Design by <a href="https://rangchen.github.io/"> Chenrang</a></p>
+			<p>Photo by : <font color="#F3E000">Mingran7</font></p>
 		</div>
 	</div>
 	<!--//footer-->
@@ -131,6 +161,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			$().UItoTop({ easingType: 'easeOutQuart' });
 			
 		});
-
+	</script>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>       
 </body>
 </html>
